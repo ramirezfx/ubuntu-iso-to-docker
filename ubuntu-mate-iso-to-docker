@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ISOPATH=$1
+DOCKERTAG=$2
+
+mkdir rootfs
+mkdir unsquashfs
+
+sudo mount -o loop $ISOPATH rootfs/
+sudo unsquashfs -f -d unsquashfs/ rootfs/casper/filesystem.squashfs
+sudo tar -C unsquashfs -c . | sudo docker import - $DOCKERTAG
+
+sudo rm -Rf unsquashfs
+sudo umount rootfs
+sudo rm -Rf rootfs
