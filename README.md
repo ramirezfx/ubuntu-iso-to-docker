@@ -7,7 +7,7 @@ If the package git is not installed:
 `sudo apt-get install git`
 
 ## Clone this repo to your client:
-`git clone`
+`git clone https://github.com/ramirezfx/ubuntu-iso-to-docker.git`
 
 ## Usage:
 
