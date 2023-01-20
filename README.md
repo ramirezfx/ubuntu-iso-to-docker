@@ -12,6 +12,7 @@ If the package git is not installed:
 ## Usage:
 
 Navigate to the scripts-folder:
+
 `cd ubuntu-iso-to-docker`
 
 Execute the script:
