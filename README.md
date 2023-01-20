@@ -16,4 +16,5 @@ Navigate to the scripts-folder:
 `cd ubuntu-iso-to-docker`
 
 Execute the script:
-./ubuntu-iso-to-docker PATH/TO/ISO.ISO myuser/myimage:tag
+
+`./ubuntu-iso-to-docker PATH/TO/ISO.ISO myuser/myimage:tag`
